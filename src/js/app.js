@@ -50,14 +50,18 @@ var template = Handlebars.compile(source);
 
 $.ajax('getpost.php').then(function(data) {
 	var $post = $(data).find('item');
+	var $pub = $post.find('pubDate').text();
 	var $desc = $('<div>'+$post.children()[5].innerHTML+'</div>');
 	var img = $desc.find('img').attr('src');
 	var desc = $desc.text().replace('<![CDATA[', '').replace(']]>', '');
 	var desc_split = desc.split(' ');
+	var pub_split = $pub.split(' ');
 	desc = desc_split.slice(0, 75).join(' ');
+	publishedDate = pub_split.slice(0, 4).join(' ');
+	
 	console.log($desc.html());
 	var data = {
-	    publishedDate: $post.find('pubDate').text(),
+	    publishedDate: publishedDate,
 	    image: img,
 	    title: $post.find('title').text(),
 	    desc: desc,
