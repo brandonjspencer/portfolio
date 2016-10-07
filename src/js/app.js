@@ -62,23 +62,30 @@ $.ajax({
     var xmlDoc = $.parseXML(xml);
         $xml = $(xmlDoc);
         $pubDate = $xml.find('pubDate');
-        console.log($pubDate.text());      
+        console.log($pubDate.text());
   }
 });
 
 //Display blog content in feed template on home page
-var source = $("#medium-feed").html(); 
-var template = Handlebars.compile(source); 
+var source = $("#medium-feed").html();
+var template = Handlebars.compile(source);
 
-var data = { 
-    publishedDate: "Sat, 27 Aug 2016", 
-    image: "https://d262ilb51hltx0.cloudfront.net/max/2000/1*IxnfU6yMB4_gvtMdp0ZO0A.jpeg",
-    title: "Bringing Remote Employees a Little Closer to Home",
-    desc: "Fusce rhoncus accumsan ipsum vel facilisis. Mauris feugiat non diam ut semper. Curabitur eget posuere felis. Nam malesuada vitae lectus vitae malesuada. Fusce finibus neque vitae euismod dictum. Duis arcu leo, aliquet et arcu tincidunt, dictum blandit est. Pellentesque dictum nibh in molestie finibus. Maecenas elementum pretium lectus id vestibulum",
-    link: "https://medium.com/@brandonjspencer/bringing-remote-employees-a-little-closer-to-home-e8985f5ab5a9?source=rss-4234ff1a9058------2"
-}; 
+$.ajax('getpost.php').then(function(data) {
+	var $post = $(data).find('item');
+	var $desc = $('<div>'+$post.children()[5].innerHTML+'</div>');
+	var img = $desc.find('img').attr('src');
+	console.log($desc.html());
+	var data = {
+	    publishedDate: $post.find('pubDate').text(),
+	    image: img,
+	    title: $post.find('title').text(),
+	    desc: $desc.text().replace('<![CDATA[', '').replace(']]>', ''),
+	    link: $post.find('link').text()
+	};
+	$('#blog').append(template(data));
+});
 
-$('#blog').append(template(data)); 
+
 
 //Smooth scroll function
 function smooth_scroll(target, offset) {
@@ -104,5 +111,3 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 			smooth_scroll(target);
   }
 });
-
-
