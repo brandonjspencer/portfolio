@@ -9,39 +9,39 @@ $(document).foundation();
 // Navbar class add on scroll
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 0) {
-            $('nav').addClass('scrolled');
-    } else {
-        $('nav').removeClass('scrolled');
-    }
+    $('nav').addClass('scrolled');
+  } else {
+    $('nav').removeClass('scrolled');
+  }
 });
 
 //Case study tools carousel
 $('.owl-carousel').owlCarousel({
-    margin:50,
-    stagePadding: 50,
-    responsiveClass:true,
-    nav: true,
-    loop: true,
-    rewind: false,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4,
-            stagePadding: 80,
-            margin: 80
-        },
-        1500:{
-            items:5,
-            stagePadding: 100,
-            margin: 100
-        }
+  margin:50,
+  stagePadding: 50,
+  responsiveClass:true,
+  nav: true,
+  loop: true,
+  rewind: false,
+  dots: false,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:4,
+      stagePadding: 80,
+      margin: 80
+    },
+    1500:{
+      items:5,
+      stagePadding: 100,
+      margin: 100
     }
+  }
 });
 
 //Capture Medium post content
@@ -61,11 +61,11 @@ $.ajax('getpost.php').then(function(data) {
 	
 	console.log($desc.html());
 	var data = {
-	    publishedDate: publishedDate,
-	    image: img,
-	    title: $post.find('title').text(),
-	    desc: desc,
-	    link: $post.find('link').text()
+    publishedDate: publishedDate,
+    image: img,
+    title: $post.find('title').text(),
+    desc: desc,
+    link: $post.find('link').text()
 	};
 	//Display blog content in feed template on home page
 	$('#blog').append(template(data));
@@ -88,10 +88,9 @@ function smooth_scroll(target, offset) {
 // Smooth scroll js
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      || location.hostname == this.hostname) {
-
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			smooth_scroll(target);
+    || location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		smooth_scroll(target);
   }
 });
