@@ -74,12 +74,15 @@ $.ajax('getpost.php').then(function(data) {
 	var $post = $(data).find('item');
 	var $desc = $('<div>'+$post.children()[5].innerHTML+'</div>');
 	var img = $desc.find('img').attr('src');
+	var desc = $desc.text().replace('<![CDATA[', '').replace(']]>', '');
+	var desc_split = desc.split(' ');
+	desc = desc_split.slice(0, 75).join(' ');
 	console.log($desc.html());
 	var data = {
 	    publishedDate: $post.find('pubDate').text(),
 	    image: img,
 	    title: $post.find('title').text(),
-	    desc: $desc.text().replace('<![CDATA[', '').replace(']]>', ''),
+	    desc: desc,
 	    link: $post.find('link').text()
 	};
 	$('#blog').append(template(data));
