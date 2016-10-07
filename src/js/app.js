@@ -45,28 +45,6 @@ $('.owl-carousel').owlCarousel({
 });
 
 //Capture Medium post content
-/*
-var $posts;
-function get_posts() {
-  $.ajax('getpost.php').then(function(data) {$posts = $(data)});
-}
-*/
-var publishedDate;
-
-$.ajax({
-  type: "GET",
-  url: "getpost.php",
-  dataType: "xml",
-  success: function(xml) {
-    // Parse the xml file and get data
-    var xmlDoc = $.parseXML(xml);
-        $xml = $(xmlDoc);
-        $pubDate = $xml.find('pubDate');
-        console.log($pubDate.text());
-  }
-});
-
-//Display blog content in feed template on home page
 var source = $("#medium-feed").html();
 var template = Handlebars.compile(source);
 
@@ -85,10 +63,9 @@ $.ajax('getpost.php').then(function(data) {
 	    desc: desc,
 	    link: $post.find('link').text()
 	};
+	//Display blog content in feed template on home page
 	$('#blog').append(template(data));
 });
-
-
 
 //Smooth scroll function
 function smooth_scroll(target, offset) {
