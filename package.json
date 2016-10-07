@@ -1,0 +1,44 @@
+{
+  "name": "foundation-sites-template",
+  "version": "1.0.0",
+  "description": "Basic template for a new Foundation for Sites project.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-bless": "^3.1.0",
+    "gulp-composer": "^0.4.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.3",
+    "image-webpack-loader": "^1.8.0",
+    "vinyl-named": "^1.1.0",
+    "vinyl-source-stream": "^1.1.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurb/foundation-sites-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zurb/foundation-sites/issues",
+    "email": "foundation@zurb.com"
+  },
+  "author": "ZURB <foundation@zurb.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "^6.2.3",
+    "handlebars": "^4.0.5",
+    "motion-ui": "^1.2.2",
+    "owl.carousel": "^2.1.4",
+    "underscore": "^1.8.3"
+  }
+}
