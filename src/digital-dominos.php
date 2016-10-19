@@ -7,7 +7,7 @@
       <div class="row intro">
         <div class="small-12 columns info">
           <div class="case-logo"><img class="logo" src="img/logos/dominospizza.svg" alt="Dominos"></div>
-          <a class="button float-right show-for-medium">Visit This Website</a>
+          <a class="button float-right show-for-medium"  href="http://jobs.dominos.com" target="_blank">Visit This Website</a>
           <a class="backlink">Digital</a>
           <h3>jobs.dominos.com</h3>
         </div>
@@ -21,19 +21,9 @@
         <div class="small-12 columns">
           <h2 class="text-center">The Project</h2>
         </div>
-        <div class="small-12 medium-12 large-7 columns">
+        <div class="small-12 medium-12 columns">
           <p class="intro">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
           <p>Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. </p>
-        </div>
-        <div class="small-12 medium-12 large-5 columns" id="awards">
-          <div class="row relative">
-            <div class="small-12 large-4 columns">
-              <img src="img/awards/mobwebawards-dark.svg">
-            </div>
-            <div class="small-12 large-8 columns">
-              <h4>Received the 2016<br>Gold Mobile Web Award</h4>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -137,19 +127,37 @@
       </div>
       <div class="highlight row">
         <div class="small 12 large-push-5 large-7 columns">
-          <img src="img/digital/intuit-search.jpg" alt="intuit-search" width="1091" height="835">
+          <img src="img/digital/dominos-search.jpg" alt="intuit-search" width="1091" height="835">
         </div>
         <div class="small 12 large-pull-7 large-5 columns">
-          <h3>Real-time Search</h3>
+          <h3>Real-time Geo Search</h3>
           <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo.</p>
         </div>
       </div>
       <div class="highlight alt row">
         <div class="small 12 large-7 columns">
-          <img src="img/digital/intuit-video.jpg" alt="intuit-search" width="1091" height="835">
+          <img src="img/digital/dominos-home.jpg" alt="intuit-search" width="1091" height="835">
         </div>
         <div class="small 12 large-5 columns">
-          <h3>Original Video and Photography</h3>
+          <h3>Rich Media Heroes</h3>
+          <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo.</p>
+        </div>
+      </div>
+      <div class="highlight row">
+        <div class="small 12 large-push-5 large-7 columns">
+          <img src="img/digital/dominos-ldp.jpg" alt="intuit-search" width="1091" height="835">
+        </div>
+        <div class="small 12 large-pull-7 large-5 columns">
+          <h3>Leadership Program Timeline</h3>
+          <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo.</p>
+        </div>
+      </div>
+      <div class="highlight alt row">
+        <div class="small 12 large-7 columns">
+          <img src="img/digital/dominos-profiles.jpg" alt="intuit-search" width="1091" height="835">
+        </div>
+        <div class="small 12 large-5 columns">
+          <h3>Employee Profiles</h3>
           <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo.</p>
         </div>
       </div>
@@ -157,18 +165,18 @@
         <div class="small-12 columns">
           <div class="row small-up-1 medium-up-2 large-up-4 block-grid text-center">
             <div class="column">
-              <img class="icon" src="img/icons/ally.svg" alt="Amazon">
-              <h3>A11y Friendly</h3>
+              <img class="icon" src="img/icons/kenexa.svg" alt="Amazon">
+              <h3>ATS Web Service</h3>
               <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt.</p>
             </div>
             <div class="column">
-              <img class="icon" src="img/icons/api.svg" alt="Ameritas">
-              <h3>JSON Jobs API</h3>
+              <img class="icon" src="img/icons/track.svg" alt="Ameritas">
+              <h3>Custom Event Tracking</h3>
               <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt.</p>
             </div>
             <div class="column">
-              <img class="icon" src="img/icons/identify.svg" alt="Dominos">
-              <h3>ID Engine</h3>
+              <img class="icon" src="img/icons/rss.svg" alt="Dominos">
+              <h3>Social Import</h3>
               <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt.</p>
             </div>
             <div class="column">
@@ -182,7 +190,7 @@
     </section>
     
     <section id="contributors" class="has-button">
-      <a class="button large">Visit This Website</a>
+      <a class="button large" href="http://jobs.dominos.com" target="_blank">Visit This Website</a>
       <header>Contributors
         <span>These things take a village</span>
       </header>

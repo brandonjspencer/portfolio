@@ -10,6 +10,7 @@ var uglify = require('gulp-uglify');
 var bless = require('gulp-bless');
 var imagemin = require('gulp-imagemin');
 var cssmin = require('gulp-cssmin');
+var uncss = require('gulp-uncss');
 
 
 gulp.task('compile-sass', function() {
@@ -76,6 +77,9 @@ gulp.task('minify-images', ['cp-static'], function() {
 gulp.task('minify-css', ['cp-static'], function() {
 	return gulp.src('./build/css/**')
 		.pipe(cssmin())
+		.pipe(uncss({
+      html: ['src/**/*.php']
+    }))
 		.pipe(gulp.dest('./build/css'));
 });
 
