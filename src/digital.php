@@ -107,7 +107,7 @@
     
     <section class="gallery-item odd">
       <div class="expanded row">
-        <div class="small-12 medium-6 columns image-wrap relative" style="background-image: url(img/digital-hero.jpg); background-size: cover;">
+        <div class="small-12 medium-6 columns image-wrap relative" style="background-image: url(img/digital/amazon-hero.jpg); background-size: cover;">
           <img class="logo" src="img/logos/amazon.svg" width="120"></p>
           <img class="image" src="img/gallery-sizer.png" alt="amazon.jobs">
           <div class="overlay"></div>
@@ -163,7 +163,7 @@
         <div class="small-12 medium-6 columns pad details">
           <h3>Cisco's Operation Homeforce</h3>
           <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo. </p>
-          <a class="button">Read Case Study</a>
+          <a href="digital-cisco.php" class="button">Read Case Study</a>
         </div>  
       </div>
     </section>

@@ -77,9 +77,9 @@ gulp.task('minify-images', ['cp-static'], function() {
 gulp.task('minify-css', ['cp-static'], function() {
 	return gulp.src('./build/css/**')
 		.pipe(cssmin())
-		.pipe(uncss({
-      html: ['src/**/*.php']
-    }))
+		//.pipe(uncss({
+      //html: ['src/**/*.php']
+    //}))
 		.pipe(gulp.dest('./build/css'));
 });
 

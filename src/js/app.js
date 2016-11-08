@@ -49,10 +49,10 @@ var source = $("#medium-feed").html();
 var template = Handlebars.compile(source);
 
 $.ajax('getpost.php').then(function(data) {
-	var $post = $(data).find('item');
-	var $pub = $post.find('pubDate').text();
+	var $post = $(data).find('item').first();
+	var $pub = $post.find('pubDate').first().text();
 	var $desc = $('<div>'+$post.children()[5].innerHTML+'</div>');
-	var img = $desc.find('img').attr('src');
+	var img = $desc.find('img').first().attr('src');
 	var desc = $desc.text().replace('<![CDATA[', '').replace(']]>', '');
 	var desc_split = desc.split(' ');
 	var pub_split = $pub.split(' ');
@@ -63,9 +63,9 @@ $.ajax('getpost.php').then(function(data) {
 	var data = {
     publishedDate: publishedDate,
     image: img,
-    title: $post.find('title').text(),
+    title: $post.find('title').first().text(),
     desc: desc,
-    link: $post.find('link').text()
+    link: $post.find('link').first().text()
 	};
 	//Display blog content in feed template on home page
 	$('#blog').append(template(data));

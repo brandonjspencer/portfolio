@@ -3,13 +3,12 @@
   include 'header.php';
 ?>
       
-    <section id="hero" style="background-image: url('img/digital/visualjobs-hero.jpg');">
+    <section id="hero" style="background-image: url('img/digital/cisco-hero.jpg');">
       <div class="row intro">
         <div class="small-12 columns info">
-          <div class="case-logo"><img class="logo" src="img/logos/ckr-white.svg" alt="Intuit"></div>
-          <a class="button float-right show-for-medium" href="http://www.visual.jobs" target="_blank">Visit This Website</a>
+          <div class="case-logo"><img class="logo" src="img/logos/cisco.svg" alt="Intuit"></div>
           <a class="backlink">Digital</a>
-          <h3>visual.jobs</h3>
+          <h3>Cisco's Operation Homeforce</h3>
         </div>
         <img class="image" src="img/gallery-sizer.png" alt="visual.jobs">
       </div>
@@ -115,44 +114,32 @@
     
     <section id="highlights" class="pad">
       
-      <div class="row">
-        <div class="small-12 large-centered large-11 columns">
-          <img src="img/digital/responsive.png" alt="responsive">
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 large-centered large-6 columns">
-          <h3 class="text-center">Mobile First Responsive Build</h3>
-          <p class="text-center">Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo. </p>
-        </div>
-      </div>
-      
       <div class="highlight row">
         <div class="small 12 large-push-5 large-7 columns">
-          <img src="img/digital/visualjobs-layouts.jpg" alt="intuit-search" width="1091" height="835">
+          <img src="img/digital/cisco-app.jpg" alt="intuit-search" width="1091" height="835">
         </div>
         <div class="small 12 large-pull-7 large-5 columns">
-          <h3>Layout Library</h3>
+          <h3>Custom Facebook App</h3>
           <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo.</p>
         </div>
       </div>
       
       <div class="highlight alt row">
         <div class="small 12 large-7 columns">
-          <img src="img/digital/visualjobs-deck.jpg" alt="intuit-search" width="1091" height="835">
+          <img src="img/digital/cisco-wizard.jpg" alt="intuit-search" width="1091" height="835">
         </div>
         <div class="small 12 large-5 columns">
-          <h3>Sales Tools</h3>
+          <h3>Referral Wizard</h3>
           <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo.</p>
         </div>
       </div>
       
-       <div class="highlight row">
+      <div class="highlight row">
         <div class="small 12 large-push-5 large-7 columns">
-          <img src="img/digital/visualjobs-guide.jpg" alt="intuit-search" width="1091" height="835">
+          <img src="img/digital/cisco-post.jpg" alt="intuit-search" width="1091" height="835">
         </div>
         <div class="small 12 large-pull-7 large-5 columns">
-          <h3>Custom Framework Guide</h3>
+          <h3>Post Activity Spotlight</h3>
           <p>Fusce non vulputate nisi, at iaculis lectus. Sed tincidunt non libero ut tincidunt. Curabitur semper ut nisl id commodo. Pellentesque ut mi justo.</p>
         </div>
       </div>
@@ -186,7 +173,7 @@
     </section>
     
     <section id="contributors" class="has-button">
-      <a class="button large">Visit This Website</a>
+      <a class="button large alert">Inactive Project</a>
       <header>Contributors
         <span>These things take a village</span>
       </header>
