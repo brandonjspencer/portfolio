@@ -2,7 +2,7 @@
 
 ### Requirements
 
-1. nodejs
+1. nodejs (v6.9.1)
 2. npm
 
 ### How to build and run

@@ -16,7 +16,7 @@ $(window).scroll(function() {
 });
 
 //Case study tools carousel
-$('.owl-carousel').owlCarousel({
+$('#tools .owl-carousel').owlCarousel({
   margin:50,
   stagePadding: 50,
   responsiveClass:true,
@@ -42,6 +42,16 @@ $('.owl-carousel').owlCarousel({
       margin: 100
     }
   }
+});
+
+//Case study gallery carousel
+$('#gallery .owl-carousel').owlCarousel({
+  nav: true,
+  loop: true,
+  rewind: false,
+  dots: true,
+  items: 1,
+  autoHeight: true
 });
 
 //Capture Medium post content
